@@ -33,7 +33,7 @@ onMounted(async () => {
             <SectionTitle title="Proyek Unggulan" />
             <div class="grid md:grid-cols-2 gap-12">
                 <div v-for="project in projects" :key="project.title" class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                    <img :src="getFullImageUrl(project.image)" <!-- *** CHANGED HERE: Using getFullImageUrl for src *** -->
+                    <img :src="getFullImageUrl(project.image)"
                          alt="Gambar Proyek"
                          class="w-full h-56 object-cover">
                     <div class="p-6">
