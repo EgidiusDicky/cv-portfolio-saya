@@ -18,8 +18,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "frontend/$1",
-            "status": 200
+            "dest": "frontend/$1"
         },
         {
             "src": "/(.*)",
