@@ -78,7 +78,7 @@ function prevImage() {
           </svg>
           Kembali ke Proyek
       </button>
-      <div class="relative bg-gray-200 rounded-lg overflow-hidden mb-6">
+      <div class="relative bg-gray-500 rounded-lg overflow-hidden mb-6">
         <a v-if="project.images && project.images.length > 0"
           :href="getFullImageUrl(project.images[currentImage])"
           class="block"
@@ -115,7 +115,7 @@ function prevImage() {
         </div>
       </div>
 
-      <h1 class="text-3xl font-bold text-white mb-4">{{ project.title }}</h1>
+      <h1 class="text-3xl font-bold text-blue-600 mb-4">{{ project.title }}</h1>
       <div class="flex flex-wrap gap-2 mb-10">
         <span v-for="tag in project.tags" :key="tag" class="bg-gray-700 px-3 py-1 rounded-full text-sm">
           {{ tag }}
