@@ -19,7 +19,7 @@ const projects = [
         id: '1',
         title: 'F&B E-Commerce Platform',
         // UBAH INI: Dari absolute ke relative
-        image: '/project_images/santapin/thumbnail-santapin.png', 
+        image: '/project_images/santapin/thumbnail-santapin.webp', 
         description: 'Platform e-commerce dibidang F&B dengan fitur keranjang belanja.',
         tech: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
         link: 'https://example.com/ecommerce',
@@ -28,13 +28,13 @@ const projects = [
         tags: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
         images: [
             // UBAH INI: Dari absolute ke relative
-            '/project_images/santapin/thumbnail-santapin.png',
-            '/project_images/santapin/santapin-cart-page.png',
-            '/project_images/santapin/santapin-dashboard-page.png',
-            '/project_images/santapin/santapin-home-page.png',
-            '/project_images/santapin/santapin-menu-detail-page.png',
-            '/project_images/santapin/santapin-menu-page.png',
-            '/project_images/santapin/santapin-team.png'
+            '/project_images/santapin/thumbnail-santapin.webp',
+            '/project_images/santapin/santapin-cart-page.webp',
+            '/project_images/santapin/santapin-dashboard-page.webp',
+            '/project_images/santapin/santapin-home-page.webp',
+            '/project_images/santapin/santapin-menu-detail-page.webp',
+            '/project_images/santapin/santapin-menu-page.webp',
+            '/project_images/santapin/santapin-team.webp'
         ],
         sections: [
             {
@@ -73,7 +73,7 @@ const projects = [
         id: '2',
         title: 'IoT-Powered Egg Incubator',
         // UBAH INI: Dari absolute ke relative
-        image: '/project_images/egg_incubator/thumbnail-egg-incubator.png', 
+        image: '/project_images/egg_incubator/thumbnail-egg-incubator.webp', 
         description: 'Sistem inkubasi telur pintar berbasis IoT yang mengontrol suhu, kelembapan, dan rotasi telur secara otomatis.',
         tech: ['Arduino IDE', 'Blynk', 'Thingspeak', 'EPS32'],
         link: 'https://example.com/incubator',
@@ -82,15 +82,15 @@ const projects = [
         tags: ['Arduino IDE', 'Blynk', 'Thingspeak', 'EPS32'],
         images: [
             // UBAH INI: Dari absolute ke relative
-            '/project_images/egg_incubator/thumbnail-egg-incubator.png',
-            '/project_images/egg_incubator/egg-incubator-wiring-diagram.png',
-            '/project_images/egg_incubator/egg-incubator1.jpg',
-            '/project_images/egg_incubator/egg-incubator2.jpg',
-            '/project_images/egg_incubator/egg-incubator-internal.jpg',
-            '/project_images/egg_incubator/egg-incubator-temperature-sensor.jpg',
-            '/project_images/egg_incubator/egg-incubator-motor-rotator.jpg',
-            '/project_images/egg_incubator/egg-incubator-wiring.jpg',
-            '/project_images/egg_incubator/egg-incubator-team.jpg'
+            '/project_images/egg_incubator/thumbnail-egg-incubator.webp',
+            '/project_images/egg_incubator/egg-incubator-wiring-diagram.webp',
+            '/project_images/egg_incubator/egg-incubator1.webp',
+            '/project_images/egg_incubator/egg-incubator2.webp',
+            '/project_images/egg_incubator/egg-incubator-internal.webp',
+            '/project_images/egg_incubator/egg-incubator-temperature-sensor.webp',
+            '/project_images/egg_incubator/egg-incubator-motor-rotator.webp',
+            '/project_images/egg_incubator/egg-incubator-wiring.webp',
+            '/project_images/egg_incubator/egg-incubator-team.webp'
         ],
         sections: [
             {

@@ -139,7 +139,7 @@ function prevImage() {
       </div>
 
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-center text-white mb-6">
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
           Project Links
         </h2>
         <div class="grid sm:grid-cols-2 gap-4">
