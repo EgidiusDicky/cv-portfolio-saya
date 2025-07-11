@@ -19,7 +19,7 @@
             </a>
         </div>
         <div class="md:w-1/2 flex justify-center animate-slide-in-right">
-            <img    src="/images/EgidiusDicky.jpg" 
+            <img    src="/images/EgidiusDicky.webp" 
                     alt="Foto Profil" 
                     class="w-80 h-80 rounded-full object-cover shadow-lg">
         </div>

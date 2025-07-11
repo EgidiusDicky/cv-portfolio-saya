@@ -71,7 +71,7 @@ function prevImage() {
     <div v-if="project">
       <button
           @click="goBack"
-          class="mb-6 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg shadow text-white font-semibold flex items-center gap-2"
+          class="mb-6 px-4 py-2 bg-gray-800 hover:bg-gray-600 rounded-lg shadow text-white font-semibold flex items-center gap-2"
       >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -117,7 +117,7 @@ function prevImage() {
 
       <h1 class="text-3xl font-bold text-blue-600 mb-4">{{ project.title }}</h1>
       <div class="flex flex-wrap gap-2 mb-10">
-        <span v-for="tag in project.tags" :key="tag" class="bg-gray-700 px-3 py-1 rounded-full text-sm">
+        <span v-for="tag in project.tags" :key="tag" class="bg-gray-800 px-3 py-1 rounded-full text-sm">
           {{ tag }}
         </span>
       </div>
