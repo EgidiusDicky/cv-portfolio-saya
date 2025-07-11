@@ -21,9 +21,12 @@ const cors = require('cors'); // Essential for cross-origin requests from your f
 const app = express();
 const PORT = process.env.PORT || 3000; // Make sure your backend runs on port 3000
 
-// Configure CORS to allow requests from your frontend's origin
-// Assuming your frontend runs on http://localhost:5173 (Vite default)
-app.use(cors({ origin: 'http://localhost:5173' }));
+// --- DYNAMIC CORS CONFIGURATION ---
+// In development, CORS_ORIGIN will likely be undefined, so it defaults to localhost:5173.
+// In production (on Vercel), you will set process.env.CORS_ORIGIN
+// to your deployed frontend URL (e.g., https://your-portfolio.vercel.app).
+const CORS_ORIGIN = process.env.CORS_ORIGIN || 'http://localhost:5173';
+app.use(cors({ origin: CORS_ORIGIN }));
 
 // Serve static files from the 'project_images' directory under the '/project_images' route
 app.use('/project_images', express.static(path.join(__dirname, 'project_images')));

@@ -27,7 +27,8 @@ onMounted(async () => {
     }
 
     try {
-        const response = await axios.get(`http://localhost:3000/api/projects/${id}`);
+        // CHANGED: Removed hardcoded 'http://localhost:3000'
+        const response = await axios.get(`/api/projects/${id}`);
         project.value = response.data;
 
         if (project.value && !project.value.images) {
