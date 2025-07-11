@@ -17,10 +17,6 @@
             "dest": "backend/index.js"
         },
         {
-            "src": "/project_images/(.*)",
-            "dest": "backend/project_images/$1"
-        },
-        {
             "src": "/(.*)",
             "dest": "frontend/$1"
         }
