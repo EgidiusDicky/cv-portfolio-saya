@@ -14,6 +14,15 @@ const currentImage = ref(0);
 const isLoading = ref(true);
 const error = ref(null);
 
+// Helper function to construct full image URL dynamically
+const getFullImageUrl = (relativePath) => {
+    // In development (npm run dev), import.meta.env.DEV is true, so use localhost.
+    // In production (Vercel build), import.meta.env.DEV is false, so use the current origin (Vercel's HTTPS URL).
+    // This assumes image paths in data.js are like '/project_images/...'
+    const baseUrl = import.meta.env.DEV ? 'http://localhost:3000' : window.location.origin;
+    return `${baseUrl}${relativePath}`;
+};
+
 function goBack() {
     router.back();
 }
@@ -27,10 +36,11 @@ onMounted(async () => {
     }
 
     try {
-        // CHANGED: Removed hardcoded 'http://localhost:3000'
+        // API call uses relative path, base URL is configured in main.js
         const response = await axios.get(`/api/projects/${id}`);
         project.value = response.data;
 
+        // Ensure images array exists, even if only 'image' property is present
         if (project.value && !project.value.images) {
             project.value.images = [project.value.image];
         }
@@ -74,10 +84,10 @@ function prevImage() {
       <!-- Image Slider -->
       <div class="relative bg-gray-500 rounded-lg overflow-hidden mb-6">
         <a v-if="project.images && project.images.length > 0"
-          :href="project.images[currentImage]"
+          :href="getFullImageUrl(project.images[currentImage])"
           class="block"
         >
-            <img :src="project.images[currentImage]"
+            <img :src="getFullImageUrl(project.images[currentImage])"
                 class="w-full h-[300px] object-contain cursor-pointer"
                 :alt="project.title + ' image ' + (currentImage + 1)"
             />
@@ -145,6 +155,7 @@ function prevImage() {
             :key="link.label"
             :href="link.url"
             target="_blank"
+            rel="noopener noreferrer"
             class="block bg-gray-800 hover:bg-gray-600 transition p-5 rounded-lg shadow text-white font-semibold"
           >
             {{ link.label }}<br />
@@ -163,3 +174,7 @@ function prevImage() {
 
   <Contact />
 </template>
+
+<style scoped>
+/* optional custom styling */
+</style>

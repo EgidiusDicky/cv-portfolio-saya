@@ -18,7 +18,8 @@ const projects = [
     {
         id: '1',
         title: 'F&B E-Commerce Platform',
-        image: 'http://localhost:3000/project_images/santapin/thumbnail-santapin.png',
+        // UBAH INI: Dari absolute ke relative
+        image: '/project_images/santapin/thumbnail-santapin.png', 
         description: 'Platform e-commerce dibidang F&B dengan fitur keranjang belanja.',
         tech: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
         link: 'https://example.com/ecommerce',
@@ -26,13 +27,14 @@ const projects = [
         // --- ProjectDetail.vue ---
         tags: ['Vue.js', 'Laravel', 'MySQL', 'Tailwind CSS'],
         images: [
-            'http://localhost:3000/project_images/santapin/thumbnail-santapin.png',
-            'http://localhost:3000/project_images/santapin/santapin-cart-page.png',
-            'http://localhost:3000/project_images/santapin/santapin-dashboard-page.png',
-            'http://localhost:3000/project_images/santapin/santapin-home-page.png',
-            'http://localhost:3000/project_images/santapin/santapin-menu-detail-page.png',
-            'http://localhost:3000/project_images/santapin/santapin-menu-page.png',
-            'http://localhost:3000/project_images/santapin/santapin-team.png'
+            // UBAH INI: Dari absolute ke relative
+            '/project_images/santapin/thumbnail-santapin.png',
+            '/project_images/santapin/santapin-cart-page.png',
+            '/project_images/santapin/santapin-dashboard-page.png',
+            '/project_images/santapin/santapin-home-page.png',
+            '/project_images/santapin/santapin-menu-detail-page.png',
+            '/project_images/santapin/santapin-menu-page.png',
+            '/project_images/santapin/santapin-team.png'
         ],
         sections: [
             {
@@ -63,14 +65,15 @@ const projects = [
             }
         ],
         links: [
-            { label: 'GitHub Frontend', url: 'https://github.com/EgidiusDicky/Santapin' }, // Replace with actual GitHub links
+            { label: 'GitHub Frontend', url: 'https://github.com/EgidiusDicky/Santapin' },
             { label: 'GitHub Backend', url: 'https://github.com/RayanBersabal/Santapin-backend' },
         ]
     },
     {
         id: '2',
         title: 'IoT-Powered Egg Incubator',
-        image: 'http://localhost:3000/project_images/egg_incubator/thumbnail-egg-incubator.png', // Replace with an actual image
+        // UBAH INI: Dari absolute ke relative
+        image: '/project_images/egg_incubator/thumbnail-egg-incubator.png', 
         description: 'Sistem inkubasi telur pintar berbasis IoT yang mengontrol suhu, kelembapan, dan rotasi telur secara otomatis.',
         tech: ['Arduino IDE', 'Blynk', 'Thingspeak', 'EPS32'],
         link: 'https://example.com/incubator',
@@ -78,15 +81,16 @@ const projects = [
         // --- ProjectDetail.vue ---
         tags: ['Arduino IDE', 'Blynk', 'Thingspeak', 'EPS32'],
         images: [
-            'http://localhost:3000/project_images/egg_incubator/thumbnail-egg-incubator.png',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-wiring-diagram.png',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator1.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator2.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-internal.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-temperature-sensor.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-motor-rotator.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-wiring.jpg',
-            'http://localhost:3000/project_images/egg_incubator/egg-incubator-team.jpg'
+            // UBAH INI: Dari absolute ke relative
+            '/project_images/egg_incubator/thumbnail-egg-incubator.png',
+            '/project_images/egg_incubator/egg-incubator-wiring-diagram.png',
+            '/project_images/egg_incubator/egg-incubator1.jpg',
+            '/project_images/egg_incubator/egg-incubator2.jpg',
+            '/project_images/egg_incubator/egg-incubator-internal.jpg',
+            '/project_images/egg_incubator/egg-incubator-temperature-sensor.jpg',
+            '/project_images/egg_incubator/egg-incubator-motor-rotator.jpg',
+            '/project_images/egg_incubator/egg-incubator-wiring.jpg',
+            '/project_images/egg_incubator/egg-incubator-team.jpg'
         ],
         sections: [
             {
