@@ -71,7 +71,7 @@ function prevImage() {
     <div v-if="project">
       <button
           @click="goBack"
-          class="mb-6 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg shadow text-yellow-300 font-semibold flex items-center gap-2"
+          class="mb-6 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg shadow text-white font-semibold flex items-center gap-2"
       >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -94,7 +94,7 @@ function prevImage() {
 
         <button
             v-if="project.images && project.images.length > 1"
-            @click="prevImage" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75"
+            @click="prevImage" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-75"
         >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -103,7 +103,7 @@ function prevImage() {
 
         <button
             v-if="project.images && project.images.length > 1"
-            @click="nextImage" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75"
+            @click="nextImage" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black p-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-75"
         >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -115,7 +115,7 @@ function prevImage() {
         </div>
       </div>
 
-      <h1 class="text-3xl font-bold text-yellow-400 mb-4">{{ project.title }}</h1>
+      <h1 class="text-3xl font-bold text-white mb-4">{{ project.title }}</h1>
       <div class="flex flex-wrap gap-2 mb-10">
         <span v-for="tag in project.tags" :key="tag" class="bg-gray-700 px-3 py-1 rounded-full text-sm">
           {{ tag }}
@@ -124,7 +124,7 @@ function prevImage() {
 
       <div class="space-y-6 mb-12">
         <div v-for="section in project.sections" :key="section.title" class="bg-gray-800 p-6 rounded-lg shadow">
-          <h2 class="text-xl font-semibold text-yellow-400 mb-2">
+          <h2 class="text-xl font-semibold text-white mb-2">
             {{ section.title }}
           </h2>
           <p v-if="section.content">
@@ -139,7 +139,7 @@ function prevImage() {
       </div>
 
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-center text-yellow-400 mb-6">
+        <h2 class="text-2xl font-bold text-center text-white mb-6">
           Project Links
         </h2>
         <div class="grid sm:grid-cols-2 gap-4">
@@ -149,7 +149,7 @@ function prevImage() {
             :href="link.url"
             target="_blank"
             rel="noopener noreferrer"
-            class="block bg-gray-700 hover:bg-gray-600 transition p-5 rounded-lg shadow text-yellow-300 font-semibold"
+            class="block bg-gray-800 hover:bg-gray-600 transition p-5 rounded-lg shadow text-white font-semibold"
           >
             {{ link.label }}<br />
             <span class="text-sm text-white opacity-70">
